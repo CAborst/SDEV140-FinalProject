@@ -24,7 +24,7 @@ import tkinter
 
 class TDCalcGUI:
     def __init__(self):
-        self.running_total = 0
+        self.running_total = 0 """This is a running total of entries."""
         
         # Create main window
         self.main_window = tkinter.Tk()
@@ -49,7 +49,7 @@ class TDCalcGUI:
                                            text = "Computed Donation Total: $ ")
         
         # Create a computed total widget
-        self.donation_total = tkinter.StringVar()
+        self.donation_total = tkinter.StringVar() """The total of donation entries for the widget."""
         self.donation_total_label = tkinter.Label(self.mid_frame, \
                                                   textvariable = self.donation_total)
         
